@@ -1,0 +1,696 @@
+﻿<process name="Centrix Data Solution - Windows Application" version="1.0" bpversion="6.0.0.434" narrative="" preferredid="ddc0b27e-323c-4b0d-a6fe-ed2cd69d2778">
+  <view>
+    <camerax>18</camerax>
+    <cameray>-116</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="568e5f33-8c75-40da-8ba6-2305a3882f7c" type="Normal" published="False">
+    <name>Launch and Login</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="09f3e880-1a08-4195-a608-9c74c593ad27" type="Normal" published="False">
+    <name>Go to Orders menu</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="e087515e-d8ab-4ae6-84e0-fe043e862fe5" type="Normal" published="False">
+    <name>Go to New Orders page</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="15ce2ee2-72cf-4b21-8987-2126a14938f1" type="Normal" published="False">
+    <name>Go To New Order</name>
+    <view>
+      <camerax>-22</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="942e8df4-265f-48fd-8fc7-afa0df7b2334" type="Normal" published="False">
+    <name>Get Exce as Collection</name>
+    <view>
+      <camerax>-44</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="843d8d22-f551-4b2b-85db-3e941add65d3" type="Normal" published="False">
+    <name>Read Referene Number</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="889d9f86-9640-40dc-ba2b-c90eaf41dbe5" type="Normal" published="False">
+    <name>Write to Collection</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="77c20c74-8286-41cc-831c-31d5ff82b1b5" name="Start" type="Start">
+    <narrative>
+    </narrative>
+    <displayx>-45</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>142fd969-3e8d-415e-a986-99994c51fd2d</onsuccess>
+  </stage>
+  <stage stageid="5079ddb4-e2fa-46ad-9367-f2e999df479d" name="End" type="End">
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-195</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="bdd62654-88e2-4046-89b2-b8ecdbade164" name="Stage1" type="ProcessInfo">
+    <narrative>
+    </narrative>
+    <displayx>-360</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="c6a82615-bb90-460d-9b44-3dd74ffa4d4f" name="Get Exce as Collection" type="SubSheetInfo">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-315</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="FF6600" />
+  </stage>
+  <stage stageid="53466dba-26ad-4929-bf54-3f47d0ed96f0" name="Start" type="Start">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>7dc822c5-648d-4e33-9ed7-2801b45d3290</onsuccess>
+  </stage>
+  <stage stageid="08c6259b-b99f-4c02-8cb5-dee4c82e07c0" name="End" type="End">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="7dc822c5-648d-4e33-9ed7-2801b45d3290" name="Create Instance" type="Action">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="008000" />
+    <inputs>
+      <input type="flag" name="Enable Events" narrative="Flag to indicate that events should be enabled / disabled on the attached instance - defaulted to True" expr="" />
+    </inputs>
+    <outputs>
+      <output type="number" name="handle" narrative="An integer which can be used to identify the created instance in subsequent actions" stage="handle" />
+    </outputs>
+    <onsuccess>51300dd8-d7e0-4ac1-a8b7-c39dcb68c521</onsuccess>
+    <resource object="MS Excel VBO" action="Create Instance" />
+  </stage>
+  <stage stageid="b30ad7d0-5fa8-444a-ba67-a960dcd26f3f" name="handle" type="Data">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>255</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="51300dd8-d7e0-4ac1-a8b7-c39dcb68c521" name="Open Workbook" type="Action">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="008000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required workbook should be opened. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="File name" narrative="The path and name of the file which should be opened." expr="[File Name]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Workbook Name" narrative="The name used by Excel to identify the workbook - usually this is the file name (without the path)." stage="Workbook Name" />
+    </outputs>
+    <onsuccess>4eabf556-58e0-42cf-9afb-57b48255677e</onsuccess>
+    <resource object="MS Excel VBO" action="Open Workbook" />
+  </stage>
+  <stage stageid="3e1ea534-80af-4ed0-a3e1-a649e2cc36e3" name="Workbook Name" type="Data">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>375</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="4eabf556-58e0-42cf-9afb-57b48255677e" name="Get Workbook As Collection" type="Action">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>-15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="008000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the worksheet which should be retrieved resides. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" narrative="The name of the workbook which contains the sheet required. The default empty text indicates the currently active workbook on the specified instance." expr="[Workbook Name]" />
+      <input type="text" name="Worksheet Name" narrative="The name of the worksheet within the specified workbook which should be written to a collection. The default empty text indicates the currently active worksheet within the specified workbook." expr="&quot;Orders_Sample&quot;" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Data" narrative="The collection containing the data from the specified worksheet - the column IDs will be gleaned from the first row on the sheet being retrieved." stage="Orders Collections" />
+    </outputs>
+    <onsuccess>75f7d297-2d1d-4d90-b0ac-d63c81cc0ef5</onsuccess>
+    <resource object="MS Excel VBO" action="Get Worksheet As Collection" />
+  </stage>
+  <stage stageid="903cd413-a883-4737-8bf0-87b813668d50" name="Orders Collections" type="Collection">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>300</displayx>
+    <displayy>30</displayy>
+    <displaywidth>90</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>collection</datatype>
+    <alwaysinit />
+  </stage>
+  <stage stageid="f7e6ef8b-6eb7-410e-8beb-f07701c6cd42" name="Launch and Login" type="SubSheetInfo">
+    <subsheetid>568e5f33-8c75-40da-8ba6-2305a3882f7c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="039be425-7994-44d8-b8a1-a4657a695f71" name="Start" type="Start">
+    <subsheetid>568e5f33-8c75-40da-8ba6-2305a3882f7c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>f1da6bdc-e931-4c60-b25d-46f1fa80a335</onsuccess>
+  </stage>
+  <stage stageid="b2e91707-416f-4388-9836-8ba6b28dd58e" name="End" type="End">
+    <subsheetid>568e5f33-8c75-40da-8ba6-2305a3882f7c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="142fd969-3e8d-415e-a986-99994c51fd2d" name="Launch and Login" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>-105</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>ce78fb56-359b-4348-bd55-204ea76577c7</onsuccess>
+    <processid>568e5f33-8c75-40da-8ba6-2305a3882f7c</processid>
+  </stage>
+  <stage stageid="f1da6bdc-e931-4c60-b25d-46f1fa80a335" name="Launch" type="Action">
+    <subsheetid>568e5f33-8c75-40da-8ba6-2305a3882f7c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="FF6600" />
+    <onsuccess>c5c3f84c-3352-45da-bf47-9cadf2754636</onsuccess>
+    <resource object="Centrix Data Solutions - Windows Application" action="Launch" />
+  </stage>
+  <stage stageid="c5c3f84c-3352-45da-bf47-9cadf2754636" name="Login" type="Action">
+    <subsheetid>568e5f33-8c75-40da-8ba6-2305a3882f7c</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="FF6600" />
+    <onsuccess>b2e91707-416f-4388-9836-8ba6b28dd58e</onsuccess>
+    <resource object="Centrix Data Solutions - Windows Application" action="Login Details" />
+  </stage>
+  <stage stageid="6688160f-d9fc-45ec-82ab-7ff285958684" name="Go to Orders menu" type="SubSheetInfo">
+    <subsheetid>09f3e880-1a08-4195-a608-9c74c593ad27</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="de080e75-1436-4890-b63a-698420436808" name="Start" type="Start">
+    <subsheetid>09f3e880-1a08-4195-a608-9c74c593ad27</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4cd1a363-bb9a-4077-87f6-256e7d9387c8</onsuccess>
+  </stage>
+  <stage stageid="4a6e4400-3946-4285-8a21-03c96643b69e" name="End" type="End">
+    <subsheetid>09f3e880-1a08-4195-a608-9c74c593ad27</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ce78fb56-359b-4348-bd55-204ea76577c7" name="Go to Orders menu" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>-165</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>79d0de54-12a1-45b8-95b0-138bf3a8edd5</onsuccess>
+    <processid>09f3e880-1a08-4195-a608-9c74c593ad27</processid>
+  </stage>
+  <stage stageid="4cd1a363-bb9a-4077-87f6-256e7d9387c8" name="Go to Orders" type="Action">
+    <subsheetid>09f3e880-1a08-4195-a608-9c74c593ad27</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="FF6600" />
+    <onsuccess>4a6e4400-3946-4285-8a21-03c96643b69e</onsuccess>
+    <resource object="Centrix Data Solutions - Windows Application" action="Orders" />
+  </stage>
+  <stage stageid="d6b3e94a-69cc-42c8-bfe2-89deae4746f9" name="Go to New Orders page" type="SubSheetInfo">
+    <subsheetid>e087515e-d8ab-4ae6-84e0-fe043e862fe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="f038dd57-ce84-4976-9806-58712f438621" name="Start" type="Start">
+    <subsheetid>e087515e-d8ab-4ae6-84e0-fe043e862fe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>1f5b171b-dd88-468d-ac2f-1256aaed2f1f</onsuccess>
+  </stage>
+  <stage stageid="f336cef4-2731-49cd-b48d-389cc65625ac" name="End" type="End">
+    <subsheetid>e087515e-d8ab-4ae6-84e0-fe043e862fe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>90</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ddbb5df5-9cad-4a9e-ac2a-03eb9bc73ef1" name="Go to New Orders page" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>-30</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>75ade3f0-778c-4714-bcd5-25b68400b267</onsuccess>
+    <processid>e087515e-d8ab-4ae6-84e0-fe043e862fe5</processid>
+  </stage>
+  <stage stageid="1f5b171b-dd88-468d-ac2f-1256aaed2f1f" name="Go to Orders Page" type="Action">
+    <subsheetid>e087515e-d8ab-4ae6-84e0-fe043e862fe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="FF6600" />
+    <onsuccess>f336cef4-2731-49cd-b48d-389cc65625ac</onsuccess>
+    <resource object="Centrix Data Solutions - Windows Application" action="Order Menu Options" />
+  </stage>
+  <stage stageid="a21267ab-a08d-493d-aeea-8fa73b47872d" name="Go To New Order" type="SubSheetInfo">
+    <subsheetid>15ce2ee2-72cf-4b21-8987-2126a14938f1</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="9fa29d0b-c648-4557-a016-e5a615137b1a" name="Start" type="Start">
+    <subsheetid>15ce2ee2-72cf-4b21-8987-2126a14938f1</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>9cb42ef2-80af-49e7-bfb7-0ba4e8a50be1</onsuccess>
+  </stage>
+  <stage stageid="195e7288-0ba7-4627-9b88-9b8070050b74" name="End" type="End">
+    <subsheetid>15ce2ee2-72cf-4b21-8987-2126a14938f1</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>120</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="75ade3f0-778c-4714-bcd5-25b68400b267" name="Go To New Order" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>90</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>a2f74492-d72d-4d87-8d1e-f99797850ccb</onsuccess>
+    <processid>15ce2ee2-72cf-4b21-8987-2126a14938f1</processid>
+  </stage>
+  <stage stageid="9cb42ef2-80af-49e7-bfb7-0ba4e8a50be1" name="Add New Order" type="Action">
+    <subsheetid>15ce2ee2-72cf-4b21-8987-2126a14938f1</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="FF6600" />
+    <inputs>
+      <input type="collection" name="Orders Collections" expr="[Orders Collections]" />
+    </inputs>
+    <onsuccess>195e7288-0ba7-4627-9b88-9b8070050b74</onsuccess>
+    <resource object="Centrix Data Solutions - Windows Application" action="Add New Orders" />
+  </stage>
+  <stage stageid="75f7d297-2d1d-4d90-b0ac-d63c81cc0ef5" name="Close Workbook" type="Action">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>60</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="008000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the workbook which should be closed resides. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" narrative="The name of the workbook which should be closed." expr="[Workbook Name]" />
+      <input type="flag" name="Save Data" narrative="True to save the data before closing the workbook; The default of False will discard any changes before closing the workbook." expr="False" />
+    </inputs>
+    <onsuccess>08c6259b-b99f-4c02-8cb5-dee4c82e07c0</onsuccess>
+    <resource object="MS Excel VBO" action="Close Workbook" />
+  </stage>
+  <stage stageid="79d0de54-12a1-45b8-95b0-138bf3a8edd5" name="Get Exce as Collection" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>-240</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>a781aefc-949a-4be7-8cb2-354934b6899e</onsuccess>
+    <processid>942e8df4-265f-48fd-8fc7-afa0df7b2334</processid>
+  </stage>
+  <stage stageid="a781aefc-949a-4be7-8cb2-354934b6899e" name="Loop Start2" type="LoopStart">
+    <narrative>
+    </narrative>
+    <displayx>-120</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>ddbb5df5-9cad-4a9e-ac2a-03eb9bc73ef1</onsuccess>
+    <groupid>4d06af76-559b-47c9-87c4-6be3fc379969</groupid>
+    <looptype>ForEach</looptype>
+    <loopdata>Orders Collections</loopdata>
+  </stage>
+  <stage stageid="65c04110-1a33-44b4-84b7-5edf56cc092d" name="Loop End2" type="LoopEnd">
+    <narrative>
+    </narrative>
+    <displayx>135</displayx>
+    <displayy>-75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>bb6d2a9c-0884-4d23-a898-8bedd99535d1</onsuccess>
+    <groupid>4d06af76-559b-47c9-87c4-6be3fc379969</groupid>
+  </stage>
+  <stage stageid="742afc49-cb9c-4cf5-9aee-a3c8561d7cf3" name="Read Referene Number" type="SubSheetInfo">
+    <subsheetid>843d8d22-f551-4b2b-85db-3e941add65d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="d886dc3b-0a7e-4fe8-b9c1-c56ddbad6ae1" name="Start" type="Start">
+    <subsheetid>843d8d22-f551-4b2b-85db-3e941add65d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>ec637978-4a45-48a6-8970-c04180e61a94</onsuccess>
+  </stage>
+  <stage stageid="7af2617d-3262-45ce-a25a-cc2c81b98ed8" name="End" type="End">
+    <subsheetid>843d8d22-f551-4b2b-85db-3e941add65d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="ec637978-4a45-48a6-8970-c04180e61a94" name="Read Reference Number" type="Action">
+    <subsheetid>843d8d22-f551-4b2b-85db-3e941add65d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="FF6600" />
+    <outputs>
+      <output type="text" name="Reference Number" stage="Reference Number" />
+    </outputs>
+    <onsuccess>7e5d5352-ec9b-4896-8849-f01290a690ce</onsuccess>
+    <resource object="Centrix Data Solutions - Windows Application" action="Read Reference" />
+  </stage>
+  <stage stageid="358087fa-f2fc-4a6b-bb5f-4ebe9c611e6e" name="Reference Number" type="Data">
+    <subsheetid>843d8d22-f551-4b2b-85db-3e941add65d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>195</displayx>
+    <displayy>-30</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a2f74492-d72d-4d87-8d1e-f99797850ccb" name="Read Referene Number" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>210</displayx>
+    <displayy>0</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>65c04110-1a33-44b4-84b7-5edf56cc092d</onsuccess>
+    <processid>843d8d22-f551-4b2b-85db-3e941add65d3</processid>
+  </stage>
+  <stage stageid="7e5d5352-ec9b-4896-8849-f01290a690ce" name="Write to Collection" type="Calculation">
+    <subsheetid>843d8d22-f551-4b2b-85db-3e941add65d3</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="FF6600" />
+    <onsuccess>7af2617d-3262-45ce-a25a-cc2c81b98ed8</onsuccess>
+    <calculation expression="[Reference Number]" stage="Orders Collections.Reference Number" />
+  </stage>
+  <stage stageid="989062f5-5b7a-48b0-a660-17e8946d87a7" name="Write to Collection" type="SubSheetInfo">
+    <subsheetid>889d9f86-9640-40dc-ba2b-c90eaf41dbe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>-195</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>90</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="686e37f0-744b-45b1-8deb-007ec5aabc58" name="Start" type="Start">
+    <subsheetid>889d9f86-9640-40dc-ba2b-c90eaf41dbe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-105</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <onsuccess>4be573d9-1912-4dcf-858d-cbb931a65138</onsuccess>
+  </stage>
+  <stage stageid="8ab3a27f-7697-4c39-b656-22f71c2ec89a" name="End" type="End">
+    <subsheetid>889d9f86-9640-40dc-ba2b-c90eaf41dbe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+  </stage>
+  <stage stageid="4be573d9-1912-4dcf-858d-cbb931a65138" name="Open Workbook" type="Action">
+    <subsheetid>889d9f86-9640-40dc-ba2b-c90eaf41dbe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>-45</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="008000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the required workbook should be opened. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="File name" narrative="The path and name of the file which should be opened." expr="[File Name]" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Workbook Name" narrative="The name used by Excel to identify the workbook - usually this is the file name (without the path)." stage="Workbook Name" />
+    </outputs>
+    <onsuccess>0adedd8b-9e77-42b2-a21f-0897c7060c8f</onsuccess>
+    <resource object="MS Excel VBO" action="Open Workbook" />
+  </stage>
+  <stage stageid="2f741d9c-47d7-4c06-aeb9-871eb7cfcee2" name="File Name" type="Data">
+    <subsheetid>942e8df4-265f-48fd-8fc7-afa0df7b2334</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>435</displayx>
+    <displayy>30</displayy>
+    <displaywidth>150</displaywidth>
+    <displayheight>60</displayheight>
+    <font family="Segoe UI" size="10" style="Regular" color="000000" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">C:\Users\vignesh\Music\New folder\Orders_Sample.csv</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="0adedd8b-9e77-42b2-a21f-0897c7060c8f" name="Write to  Collection" type="Action">
+    <subsheetid>889d9f86-9640-40dc-ba2b-c90eaf41dbe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>15</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="008000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the specified collection should be written. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" narrative="The name of the workbook within which the data should be written. The default empty value indicates the current workbook within the specified instance." expr="[Workbook Name]" />
+      <input type="collection" name="Collection" narrative="The collection containing the data which should be written to the worksheet." expr="[Orders Collections]" />
+      <input type="text" name="Worksheet Name" narrative="The name of the worksheet on which the given data should be written. The default empty value indicates the current sheet within the specified workbook." expr="&quot;Orders_Sample&quot;" />
+      <input type="text" name="Cell Reference" narrative="The reference at which the collection should be written." expr="&quot;A1&quot;" />
+      <input type="flag" name="Include Column Names" narrative="True to indicate that the column names from the collection should be written out as the first row; False to ignore the column names and just write out the data." expr="True" />
+    </inputs>
+    <onsuccess>f38f891d-cf46-403e-a791-a29254081251</onsuccess>
+    <resource object="MS Excel VBO" action="Write Collection" />
+  </stage>
+  <stage stageid="f38f891d-cf46-403e-a791-a29254081251" name="Save and Close" type="Action">
+    <subsheetid>889d9f86-9640-40dc-ba2b-c90eaf41dbe5</subsheetid>
+    <narrative>
+    </narrative>
+    <displayx>15</displayx>
+    <displayy>75</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="008000" />
+    <inputs>
+      <input type="number" name="handle" narrative="The integer handle identifying the instance on which the workbook which should be closed resides. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" narrative="The name of the workbook which should be closed." expr="[Workbook Name]" />
+      <input type="flag" name="Save Data" narrative="True to save the data before closing the workbook; The default of False will discard any changes before closing the workbook." expr="True" />
+    </inputs>
+    <onsuccess>8ab3a27f-7697-4c39-b656-22f71c2ec89a</onsuccess>
+    <resource object="MS Excel VBO" action="Close Workbook" />
+  </stage>
+  <stage stageid="bb6d2a9c-0884-4d23-a898-8bedd99535d1" name="Write to Collection" type="SubSheet">
+    <narrative>
+    </narrative>
+    <displayx>75</displayx>
+    <displayy>-135</displayy>
+    <displaywidth>60</displaywidth>
+    <displayheight>30</displayheight>
+    <font family="Segoe UI" size="10" style="Bold" color="0000FF" />
+    <onsuccess>5079ddb4-e2fa-46ad-9367-f2e999df479d</onsuccess>
+    <processid>889d9f86-9640-40dc-ba2b-c90eaf41dbe5</processid>
+  </stage>
+</process>
